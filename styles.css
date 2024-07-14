@@ -1,18 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
-header, footer {
+
+.hero-section {
+    background: #007bff;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    margin-top: 2rem;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+footer {
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-main {
-    padding: 1rem;
-}
-.project {
-    margin-bottom: 1rem;
+    padding: 1rem 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }

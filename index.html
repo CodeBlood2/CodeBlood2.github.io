@@ -4,29 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Description of the project.</p>
-                <a href="link-to-project">View Project</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Add more projects as needed -->
+        </div>
+    </nav>
+
+    <header class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4">Welcome to My Portfolio</h1>
+            <p class="lead">Showcasing My Work and Achievements</p>
+        </div>
+    </header>
+
+    <main class="container mt-5 pt-5">
+        <section id="about" class="mb-5">
+            <h2>About Me</h2>
+            <p>A brief introduction about yourself.</p>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Project Title</h3>
+                            <p class="card-text">Description of the project.</p>
+                            <a href="link-to-project" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Contact information or form.</p>
         </section>
     </main>
-    <footer>
-        <p>Contact Information</p>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Your Name</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
